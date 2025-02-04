@@ -1,0 +1,10 @@
+The CSS code uses an invalid or unsupported property.  For example, using a property that's specific to a particular browser or version without proper vendor prefixes, or using a property that's simply not defined in the CSS specification.
+```css
+div {
+  font-size: larger;
+  background-color: rgba(255, 0, 0, 0.5); /* This is fine */
+  display: flexbox; /* Invalid - should be display: flex; */
+  -webkit-border-radius: 5px; /* Only works on Webkit-based browsers, needs other prefixes */
+  border-radius: 5px; /* Correct way, will work on most modern browsers */
+}
+```
